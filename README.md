@@ -1,5 +1,5 @@
 # init.lua
-Custom NATIVE neovim config for rust with autocomplete/indent, LSP, highlighting, and a dracula inspired theme. 
+Custom NATIVE neovim config, mostly for rust, with autocomplete/indent, LSP, syntax highlighting, and a dracula inspired theme, all without plugins.
 
 ![image](https://github.com/user-attachments/assets/5942ad09-ff39-457d-b206-5ac515cdb123)
 
