@@ -98,34 +98,4 @@ vim.api.nvim_create_autocmd("FileType", {
 -- Set leader key
 vim.g.mapleader = " "
 
--- Define the Dracula color palette
-local colors = {
-    bg = '#282a36',
-    fg = '#f8f8f2',
-    comment = '#6272a4',
-    constant = '#bd93f9',
-    identifier = '#50fa7b',
-    statement = '#ff79c6',
-    preproc = '#ffb86c',
-    type = '#8be9fd',
-    special = '#ff5555',
-    error = '#ff5555',
-    todo = '#ffb86c',
-}
-
--- Apply highlights
-vim.cmd("highlight Normal guibg=" .. colors.bg .. " guifg=" .. colors.fg)
-vim.cmd("highlight Comment guifg=" .. colors.comment)
-vim.cmd("highlight Constant guifg=" .. colors.constant)
-vim.cmd("highlight Identifier guifg=" .. colors.identifier)
-vim.cmd("highlight Statement guifg=" .. colors.statement)
-vim.cmd("highlight PreProc guifg=" .. colors.preproc)
-vim.cmd("highlight Type guifg=" .. colors.type)
-vim.cmd("highlight Special guifg=" .. colors.special)
-vim.cmd("highlight Underlined guifg=" .. colors.statement .. " gui=underline")
-vim.cmd("highlight Error guifg=" .. colors.error .. " guibg=" .. colors.preproc)
-vim.cmd("highlight Todo guifg=" .. colors.todo .. " gui=bold")
-vim.cmd("highlight LineNr guifg=#6272a4")  -- Set line numbers to a greyish blue (Dracula style)
-vim.cmd("highlight CursorLine guibg=#44475a")  -- Set the cursor line background to a dark grey
-vim.cmd("highlight CursorLineNr guifg=#bd93f9")  -- Set the cursor line number to purple
-
+vim.cmd [[colorscheme zaibatsu]]
